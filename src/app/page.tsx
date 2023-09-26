@@ -40,11 +40,11 @@ export default function Home() {
 								</Tab>
 							))}
 
-						
+
 						</Tab.List>
 						<Tab.Panels>
 							<Tab.Panel>All Photos</Tab.Panel>
-							<Tab.Panel>Wedding</Tab.Panel>
+							<Tab.Panel>Wedding shoot</Tab.Panel>
 							<Tab.Panel>Personal</Tab.Panel>
 						</Tab.Panels>
 					</Tab.Group>
