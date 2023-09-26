@@ -16,7 +16,7 @@ export default function Home() {
 					href="#"
 					className="rounded-xl bg-slate-400 px-3 py-2 hover:bg-opacity-90"
 				>
-					Get in touch
+					Contact Me
 				</Link>
 			</header>
 
