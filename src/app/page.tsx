@@ -2,6 +2,11 @@
 import { Tab } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
+const tabs = [
+	{ key: "all", display: "All" },
+	{ key: "wedding", display: "Wedding" },
+	{ key: "personal", display: "Personal" },
+];
 export default function Home() {
 	return (
 		<div className="flex flex-col h-full bg-white align-center ">
@@ -24,9 +29,18 @@ export default function Home() {
 				<div className="flex flex-col items-center">
 					<Tab.Group>
 						<Tab.List className="flex items-center gap-4">
-							<Tab>All </Tab>
-							<Tab>Wedding</Tab>
-							<Tab>Personal</Tab>
+
+							{tabs.map((tab) => (
+								<Tab key={tab.key}>
+									{({ selected }) => (
+										<span className={selected ? "text-white" : "text-black"}>
+											{tab.display}
+										</span>
+									)}
+								</Tab>
+							))}
+
+						
 						</Tab.List>
 						<Tab.Panels>
 							<Tab.Panel>All Photos</Tab.Panel>
