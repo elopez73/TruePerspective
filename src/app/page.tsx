@@ -24,7 +24,7 @@ export default function Home() {
 				<div className="flex flex-col items-center">
 					<Tab.Group>
 						<Tab.List className="flex items-center gap-4">
-							<Tab>All</Tab>
+							<Tab>All </Tab>
 							<Tab>Wedding</Tab>
 							<Tab>Personal</Tab>
 						</Tab.List>
