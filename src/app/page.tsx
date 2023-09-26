@@ -26,23 +26,25 @@ export default function Home() {
 			</header>
 
 			<main className="grow">
-				<div className="flex flex-col items-center">
+				<div className="flex flex-col items-center h-full">
 					<Tab.Group>
-						<Tab.List className="flex items-center gap-4">
-
+						<Tab.List className="flex items-center gap-12">
 							{tabs.map((tab) => (
-								<Tab key={tab.key}>
+								<Tab
+									key={tab.key}
+									className="p-2"
+								>
 									{({ selected }) => (
-										<span className={selected ? "text-white" : "text-black"}>
+										<span
+											className={selected ? "text-slate-900" : "text-black"}
+										>
 											{tab.display}
 										</span>
 									)}
 								</Tab>
 							))}
-
-
 						</Tab.List>
-						<Tab.Panels>
+						<Tab.Panels className="bg-stone-900 h-full bg-opacity-10 max-w-[900px] w-full p-2 sm:p-4 my-6">
 							<Tab.Panel>All Photos</Tab.Panel>
 							<Tab.Panel>Wedding shoot</Tab.Panel>
 							<Tab.Panel>Personal</Tab.Panel>
@@ -51,8 +53,8 @@ export default function Home() {
 				</div>
 			</main>
 
-			<footer className="h-[10%]">
-				<p>FOOTER</p>
+			<footer className="h-[10%] flex justify-center items-center">
+				<p>True Perspective</p>
 			</footer>
 		</div>
 	);
