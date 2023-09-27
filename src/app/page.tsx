@@ -37,7 +37,7 @@ export default function Home() {
 					height={50}
 					alt="LOGO"
 				/>
-				<div className="uppercase tex-lg font-medium"></div>
+				<div className="uppercase tex-lg font-medium"> True Perspective </div>
 				<Link
 					href="#"
 					className="rounded-xl bg-amber-200 px-3 py-2 hover:bg-opacity-90"
@@ -74,7 +74,7 @@ export default function Home() {
 									className="flex gap-4"
 									columnClassName="my-masonry-grid_column"
 								>
-									{images.map((image,index) => (
+									{images.map((image, index) => (
 										<Image
 											key={image.src}
 											src={image}
@@ -91,7 +91,7 @@ export default function Home() {
 								<LightGalleryComponent
 									onInit={(ref) => {
 										if (ref) {
-											lightboxRef.current = ref.instance
+											lightboxRef.current = ref.instance;
 										}
 									}}
 									speed={500}
@@ -99,8 +99,7 @@ export default function Home() {
 									dynamic
 									dynamicEl={images.map((image) => ({
 										src: image.src,
-										thumb:image.src
-
+										thumb: image.src,
 									}))}
 								/>
 							</Tab.Panel>
