@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "lightgallery": "^2.7.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
