@@ -3,6 +3,13 @@ import { Tab } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
 import Masonry from "react-masonry-css";
+import wedding from "public/wedding.jpg";
+import wedding1 from "public/wedding1.jpg";
+import wedding2 from "public/wedding2.jpg";
+import wedding3 from "public/wedding3.jpg";
+import wedding4 from "public/wedding4.jpg";
+import wedding5 from "public/wedding4.jpg";
+
 const tabs = [
 	{ key: "all", display: "All" },
 	{ key: "wedding", display: "Wedding" },
@@ -14,14 +21,14 @@ export default function Home() {
 			<header className="fixed w-full top-0 z-10 flex justify-between items-center h-[10%] px-10">
 				<Image
 					src="/logo.png"
-					width={100}
+					width={75}
 					height={50}
 					alt="LOGO"
 				/>
 				<div className="uppercase tex-lg font-medium"></div>
 				<Link
 					href="#"
-					className="rounded-xl bg-yellow-200 px-3 py-2 hover:bg-opacity-90"
+					className="rounded-xl bg-amber-200 px-3 py-2 hover:bg-opacity-90"
 				>
 					Contact Me
 				</Link>
@@ -55,21 +62,36 @@ export default function Home() {
 									className="flex gap-4"
 									columnClassName="my-masonry-grid_column"
 								>
-									<img
-										src="/wedding1.jpg"
+									<Image
+										src={wedding}
 										alt="wed1"
 										className="my-4"
-									></img>
-									<img
-										src="/wedding2.jpg"
+									/>
+									<Image
+										src={wedding1}
 										alt="wed1"
 										className="my-4"
-									></img>
-									<img
-										src="/wedding3.jpg"
+									/>
+									<Image
+										src={wedding2}
 										alt="wed1"
 										className="my-4"
-									></img>
+									/>
+									<Image
+										src={wedding3}
+										alt="wed1"
+										className="my-4"
+									/>
+									<Image
+										src={wedding4}
+										alt="wed1"
+										className="my-4"
+									/>
+									<Image
+										src={wedding5}
+										alt="wed1"
+										className="my-4"
+									/>
 								</Masonry>
 							</Tab.Panel>
 							<Tab.Panel>Wedding shoot</Tab.Panel>
