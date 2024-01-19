@@ -1,5 +1,5 @@
-# TruePerspective is a concept wedding photography app, it was built using next.js.
-## At this time, it is not complete. 
+# TruePerspective wedding photography app.
+Built using next.js. At this time, it is not complete. 
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
